@@ -18,3 +18,9 @@ module fulladder(
   assign intff.carry = (intff.a&intff.b)|(intff.b&intff.c)|(intff.a&intff.c);
   
 endmodule
+
+
+
+
+
+// https://edaplayground.com/x/LKGu
