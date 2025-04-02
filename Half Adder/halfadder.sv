@@ -9,3 +9,6 @@ module halfadder(
   
   
 endmodule
+
+
+//https://edaplayground.com/x/NL9G
