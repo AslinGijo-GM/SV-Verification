@@ -17,3 +17,6 @@ module sp_ram
             dout <= mem[addr];
     end
 endmodule
+
+
+//https://edaplayground.com/x/Wzyb
