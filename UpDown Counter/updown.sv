@@ -19,3 +19,5 @@ module updown(
     
     end
 endmodule
+
+//   https://edaplayground.com/x/WmLL
