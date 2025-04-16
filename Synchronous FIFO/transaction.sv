@@ -21,10 +21,10 @@
   bit [$clog2(ADDRESS)-1:0]r_ptr,w_ptr;
 
   
-//    constraint fullread{
-//      if(count == 3)
-//        mem[1] ==1;
-//    }  
+   constraint fullread{
+    if(count == 4)
+       mem[1] ==1;
+   }  
    
   constraint mem_dist {
     mem dist {
