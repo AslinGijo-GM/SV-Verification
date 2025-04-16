@@ -10,12 +10,13 @@ module fifo
     input [WIDTH-1:0]din,
     output reg [WIDTH-1:0]dout,
     output full,empty,
-    output reg [$clog2(ADDRESS+1):0]count
+  	output reg [$clog2(ADDRESS+1):0]count,
+  	output reg [$clog2(ADDRESS)-1:0]r_ptr,w_ptr
     );
   
     
     reg [WIDTH-1:0] mem [ADDRESS-1:0];
-    reg [$clog2(ADDRESS)-1:0]r_ptr,w_ptr;
+    
     
     
     always @(posedge clk) begin
@@ -40,17 +41,16 @@ module fifo
             dout  <=mem[r_ptr];
             r_ptr <= r_ptr + 1;
             count <= count - 1;
-          
+            
         end
     end
     
-  assign full = count == WIDTH ;
-    assign empty = count == 0;
-    
-    
-    
+
+   assign full = count == 4;
+   assign empty = count == 0;
+  
+  
 endmodule
 
-//  https://edaplayground.com/x/Wxqr
 
-//  https://edaplayground.com/x/gvh_
+//https://edaplayground.com/x/Wxqr
