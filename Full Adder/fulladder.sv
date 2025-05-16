@@ -24,3 +24,5 @@ endmodule
 
 
 // https://edaplayground.com/x/LKGu
+
+// https://edaplayground.com/x/twNY  //  with coverage //
